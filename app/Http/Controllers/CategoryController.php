@@ -93,8 +93,8 @@ class CategoryController extends Controller
         $products=Product::where('subcategory_id',$id)->get();
         $subcategories=Subcategory::all();
         $brands=Brand::all();
-
-        return view('front.category-product',compact('products','subcategories','brands'));
+        
+         return view('front.category-product',compact('products','subcategories','brands'));
     }
 
 }
